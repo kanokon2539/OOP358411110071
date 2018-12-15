@@ -1,6 +1,5 @@
 package leb3;
 
-import javax.xml.soap.Text;
 import java.util.Scanner;
 
 public class Quiz1_BMI {
