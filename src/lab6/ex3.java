@@ -17,7 +17,7 @@ public class ex3 {
                 new StringTokenizer(strBuf.toString());
         System.out.println(token);
         System.out.println(token.countTokens());
-
+        //cutting words form String
         while (token.hasMoreTokens()){
             System.out.println(token.nextToken());
         }
