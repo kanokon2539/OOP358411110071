@@ -3,8 +3,8 @@ package lab8;
 public class Employee extends Person{
     private String position;
     private double salary;
-    //constructor
 
+    //constructor
     public Employee(String pID, String name, String position, double salary) {
         super(pID, name);
         this.position = position;
@@ -15,15 +15,11 @@ public class Employee extends Person{
     @Override
     public String toString() {
         return super.toString()+"Employee{" +
-                "p='" + p + '\'' +
+                "position='" + position + '\'' +
                 ", salary=" + salary +
                 '}';
     }
-
-
     //getter and setter
-
-
     public String getPosition() {
         return position;
     }
