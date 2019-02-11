@@ -17,5 +17,6 @@ public class Circle extends GraphicObject{
     }
     public Circle (double r){
 
+
     }
 }//class
