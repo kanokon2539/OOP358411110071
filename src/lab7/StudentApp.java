@@ -11,7 +11,7 @@ public class StudentApp {
        System.out.println(std1.getGender());
        std1.setGender('M');
         System.out.println(std1.getGender());
-        std1.setId("111111111111");
+        std1.setId("358411110071");
         System.out.println(std1.getId());
         ///////////////////
         Student std2 = new Student("222222222222","Girl",'F');
@@ -19,6 +19,12 @@ public class StudentApp {
 
         System.out.println(std1.getName());
         System.out.println(std2.getName());
+
+
+        System.out.println(std1.toString());
+        System.out.println(std2.toString());
+
+
 
 
     }

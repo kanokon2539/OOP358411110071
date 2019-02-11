@@ -38,7 +38,15 @@ public class Student {
         this.gender = gender;
     }
 
+    //toString
 
 
-
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Student{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", gender=" + gender +
+                '}';
+    }
 }//class
