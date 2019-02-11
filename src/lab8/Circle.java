@@ -15,8 +15,21 @@ public class Circle extends GraphicObject{
     double findArea() {
         return PI*(r*r);
     }
-    public Circle (double r){
 
-
+    public Circle(double r) {
+        this.r = r;
     }
+
+    public double getR() {
+        return r;
+    }
+
+    public void setR(double r) {
+        this.r = r;
+    }
+
+    public double getPI() {
+        return PI;
+    }
+
 }//class
