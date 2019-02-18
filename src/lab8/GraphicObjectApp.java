@@ -11,8 +11,8 @@ public class GraphicObjectApp {
         System.out.println(rec.getHigh());
         System.out.println(rec.getWidth());
 
-        Circle cir = new Circle(20.0);
-        cir.setColor("Blue");
+        Circle cir = new Circle(50.0);
+        cir.setColor("Red");
         System.out.println("The area of my circle is: "+cir.findArea());
 
 

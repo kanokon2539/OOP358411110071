@@ -4,11 +4,16 @@ public class Person {
     //class properties
     private String pID;
     private String name;
+    private String yearBorn;
     //constructor
 
-    public Person(String pID, String name) {
+    public Person(String pID, String name,String yearBorn) {
         this.pID = pID;
         this.name = name;
+        this.yearBorn = yearBorn;
+    }
+    public void introduce(){
+        System.out.println("My");
     }
 
     //toString
