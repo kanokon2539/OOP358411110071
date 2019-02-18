@@ -1,23 +1,27 @@
 package lab8;
-
 public class Person {
+
     //class properties
     private String pID;
     private String name;
     private String yearBorn;
-    //constructor
 
-    public Person(String pID, String name,String yearBorn) {
+    public Person(String pID, String name, String yearBoen) {
         this.pID = pID;
         this.name = name;
-        this.yearBorn = yearBorn;
+        this.yearBorn = yearBoen;
+    }
+
+    //constructor
+    public Person(String pID, String name) {
+        this.pID = pID;
+        this.name = name;
     }
     public void introduce(){
-        System.out.println("My");
+        System.out.println("My name is "+this.name+",");
+        System.out.println("I was born "+this.yearBorn+".");
     }
-
     //toString
-
     @Override
     public String toString() {
         return "Person{" +
@@ -27,8 +31,6 @@ public class Person {
     }
 
     //getter and setter
-
-
     public String getpID() {
         return pID;
     }
@@ -44,4 +46,6 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
+
 }//class

@@ -3,12 +3,15 @@ package CaseStudy;
 public class bankAccount {
     private String id;
     private double balance;
-    private Customer name;
+    private Customer cus;
 
-    public bankAccount(String id, double balance, Customer name) {
+    public bankAccount(String id, double balance, Customer cus) {
         this.id = id;
         this.balance = balance;
-        this.name = name;
+        this.cus = cus;
+    }
+    public String getId(){
+            return this.id
     }
     public String checkBalance(){
         return this.balance;
@@ -16,4 +19,15 @@ public class bankAccount {
     private void doposit (double amount){
         this.balance += amount; // this.balance = this.balance+amount;
     }
+    public void withdraw (double amount){
+        this.balance -= amount;
+    }
+    public String getInfo(){
+        return "[Customer Name: "+this.cus.getName()+"" +
+                "Bank ID: "+this.id+"" +
+                "Balance: "+this.balance+"]";
+    }
+
+
+
 }//class
