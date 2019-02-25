@@ -11,17 +11,13 @@ public class bankAccount {
         this.cus = cus;
     }
     public String getId(){
-            return this.id
+            return this.id;
     }
-    public String checkBalance(){
-        return this.balance;
+    public String checkBalance(){return this.balance};
+    private void doposit (double amount){this.balance += amount; // this.balance = this.balance+amount;
     }
-    private void doposit (double amount){
-        this.balance += amount; // this.balance = this.balance+amount;
-    }
-    public void withdraw (double amount){
-        this.balance -= amount;
-    }
+    public void withdraw (double amount){this.balance -= amount};
+
     public String getInfo(){
         return "[Customer Name: "+this.cus.getName()+"" +
                 "Bank ID: "+this.id+"" +
